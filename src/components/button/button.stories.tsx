@@ -6,18 +6,25 @@ const meta = {
     component: Button,
     args: {
         children: 'Button',
+        variant: 'primary',
+        disabled: false,
+        size: 'medium',
     },
+    argTypes: {
+        disabled: {
+            control: 'boolean',
+        },
+        variant: {
+            control: 'select',
+        },
+    }
 } satisfies Meta;
 
 export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
-    args: {
-        variant: 'primary',
-    },
-};
+export const Primary: Story = {};
 
 export const Secondary: Story = {
     args: {
