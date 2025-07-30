@@ -3,7 +3,7 @@ import styles from './button.module.css';
 import clsx from "clsx";
 
 type Props = ComponentProps<'button'> & {
-  variant?: 'primary' | 'secondary' | 'destructive';
+  variant?: 'primary' | 'secondary' | 'destructive' | 'warning';
   size?: 'small' | 'medium' | 'large';
 }
 
